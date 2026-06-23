@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects — Maisy Holehouse</title>
+  <title>Projects — Amelia Maisy</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .page-header {
-      padding: 5rem 0 4rem;
-      border-bottom: 1px solid var(--border);
+      padding: 3.5rem 0 3rem;
     }
 
     .page-header .eyebrow {
@@ -16,25 +15,277 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--ink-muted);
-      margin-bottom: 1.25rem;
+      margin-bottom: 1rem;
     }
 
     .page-header h1 {
       font-family: var(--serif);
-      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-size: clamp(2.25rem, 4.5vw, 3.5rem);
       font-weight: 400;
       line-height: 1.1;
       max-width: 600px;
     }
 
     .page-header p {
-      margin-top: 1.25rem;
-      font-size: 1.0625rem;
+      margin-top: 1rem;
+      font-size: 1rem;
       color: var(--ink-soft);
-      max-width: 560px;
+      max-width: 540px;
       line-height: 1.7;
     }
 
+    /* Section anchors sit above their content to account for fixed nav */
+    .section-anchor {
+      display: block;
+      height: 5rem;
+      margin-top: -5rem;
+      visibility: hidden;
+    }
+
+    .projects-section { padding: 2rem 0 5rem; }
+
+    .projects-category { margin-bottom: 4rem; }
+
+    .cat-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 2rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .project-img-wrap {
+      width: 100%;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      background: var(--border);
+      margin-bottom: 1rem;
+    }
+
+    .project-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover .project-img-wrap img { transform: scale(1.03); }
+
+    .project-img-placeholder {
+      width: 100%;
+      height: 100%;
+      background: var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.06em;
+    }
+
+    .project-meta {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 0.375rem;
+    }
+
+    .project-tag {
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 0.25rem 0.625rem;
+      border-radius: 100px;
+    }
+
+    .project-year { font-size: 0.8125rem; color: var(--ink-muted); }
+
+    .project-card h3 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 0.375rem;
+    }
+
+    .project-card p { font-size: 0.9375rem; color: var(--ink-soft); line-height: 1.65; }
+
+    /* Extra / passion section — feature cards */
+    .extra-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .extra-card {
+      border: 1px solid var(--border);
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .extra-card-img {
+      width: 100%;
+      height: 200px;
+      background: var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+      letter-spacing: 0.06em;
+    }
+
+    .extra-card-body { padding: 1.75rem; }
+
+    .extra-category {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 0.625rem;
+    }
+
+    .extra-card h3 {
+      font-family: var(--serif);
+      font-size: 1.375rem;
+      font-weight: 400;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .extra-card p {
+      font-size: 0.9375rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .extra-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Amelia Maisy</a>
+  <ul class="nav-links">
+    <li><a href="experience.html">Experience</a></li>
+    <li class="nav-dropdown">
+      <a href="projects.html" class="active">Projects</a>
+      <div class="dropdown-menu">
+        <a href="projects.html#research">Research & Eng</a>
+        <a href="projects.html#design">Design</a>
+        <a href="projects.html#extra">Extra</a>
+      </div>
+    </li>
+    <li><a href="writing.html">Thoughts</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="page-header">
+      <p class="eyebrow">Work & passion projects</p>
+      <h1>Things I've made, studied, and obsessed over.</h1>
+      <p>Engineering projects, school work, self-initiated experiments, and the pursuits that don't fit on a resume — but probably say the most about who I am.</p>
+    </div>
+
+    <div class="projects-section">
+
+      <span class="section-anchor" id="research"></span>
+      <div class="projects-category">
+        <p class="cat-label">Research & Engineering</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="https://framerusercontent.com/images/JlfYcXKhq3T88YDN6yk3GGykndc.jpg" alt="Woven material study" />
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Materials R&D</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>Bio-based coating study</h3>
+            <p>Speculative outerwear material system exploring algae-derived coatings, durability testing, repairable trims, and weather protection without petroleum-heavy finishes.</p>
+          </div>
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder">School project</div>
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Process Design</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3>Mycelium thread plant model</h3>
+            <p>Full process design and modeling for a mycelium-based thread manufacturing plant — material inputs, reactor design, scale-up constraints, and economic analysis.</p>
+          </div>
+        </div>
+      </div>
+
+      <span class="section-anchor" id="design"></span>
+      <div class="projects-category">
+        <p class="cat-label">Design</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img src="https://framerusercontent.com/images/izjFFdkp1wt91FKCPKbvSy8P0mA.jpg" alt="Apparel at work table" />
+            </div>
+            <div class="project-meta">
+              <span class="project-tag">Apparel</span>
+              <span class="project-year">Ongoing</span>
+            </div>
+            <h3>Material-to-garment archive</h3>
+            <p>Designing and sewing my own clothes from scratch — deadstock fabric, pattern experiments, fiber behavior notes, and real-world wear testing. Every piece starts with what the material wants to do.</p>
+          </div>
+        </div>
+      </div>
+
+      <span class="section-anchor" id="extra"></span>
+      <div class="projects-category">
+        <p class="cat-label">Extra</p>
+        <div class="extra-grid">
+
+          <div class="extra-card">
+            <div class="extra-card-img">Travel</div>
+            <div class="extra-card-body">
+              <p class="extra-category">Travel</p>
+              <h3>Moving through the world intentionally</h3>
+              <p>Avid traveler and student of place. Travel sharpens observation — noticing how materials, systems, and cultures are put together differently somewhere else. It's one of the fastest ways to expand what you consider possible.</p>
+            </div>
+          </div>
+
+          <div class="extra-card">
+            <div class="extra-card-img">Training</div>
+            <div class="extra-card-body">
+              <p class="extra-category">Movement</p>
+              <h3>A training program built like a product</h3>
+              <p>Designed my own strength training system from the ground up — testing protocols, tracking recovery, adjusting based on feedback. The same methodology as any product development problem: build, measure, iterate.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <span>© 2026 Amelia Maisy</span>
+  <a href="mailto:hello@maisy.studio">hello@maisy.studio</a>
+</footer>
+
+</body>
+</html>
     .projects-section { padding: 5rem 0; }
 
     .projects-category {
