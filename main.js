@@ -80,7 +80,7 @@ function renderFooter() {
       <div class="footer-top">
         <p class="footer-tagline">Designing solutions with a chemist's rigor and a maker's instinct.</p>
         <ul class="footer-links">
-          <li><a href="mailto:ameliamaisy19@gmail.com">email me</a></li>
+          <li><a href="mailto:ameliamaisy19@gmail.com">Email Me</a></li>
           <li><a href="https://www.instagram.com/maisystravel/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://on.soundcloud.com/Tl2iBa7TFvgOg7NouH" target="_blank" rel="noopener">SoundCloud</a></li>
           <li><a href="#" id="linkedinLink" target="_blank" rel="noopener">LinkedIn</a></li>
