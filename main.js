@@ -7,7 +7,7 @@
 
 // Set your real LinkedIn URL once here — it fills in the footer link
 // on every page plus the button on education.html automatically.
-const LINKEDIN_URL = "https://www.linkedin.com/in/your-profile-here";
+const LINKEDIN_URL = "https://www.linkedin.com/in/amelia-holehouse/";
 
 const NAV_LINKS = [
   { href: "index.html", label: "Home", key: "home" },
