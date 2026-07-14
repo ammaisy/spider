@@ -19,7 +19,7 @@ projects.html    Projects hub (links to the 4 sections below)
 research.html    Projects / Research
 apparel.html     Projects / Apparel
 video.html       Projects / Video
-audio.html       Projects / Audio (DJ)
+dj.html          Projects / DJ
 education.html   Education
 contact.html     Contact
 style.css        All styling, one file
@@ -50,7 +50,7 @@ To add another **video**, swap the `src="..."` on the YouTube `<iframe>` in
 `video.html` for a new video's embed URL (from YouTube's Share → Embed), or
 duplicate the whole `.embed-frame` block for a second video.
 
-To add another **mix**, do the same in `audio.html` — get a new embed URL from
+To add another **mix**, do the same in `dj.html` — get a new embed URL from
 SoundCloud's "Share" → "Embed" panel, or just swap the `url=` part of the
 existing `src` for your new track link.
 
@@ -83,10 +83,10 @@ existing `src` for your new track link.
 
 ## Notes on structure
 
-- Nav is: **Home · Projects (Research / Apparel / Video / Audio) · Education · Contact.**
+- Nav is: **Home · Projects (Research / Apparel / Video / DJ) · Education · Contact.**
   If you'd rather have Education or Contact live *under* Projects, or want a
   different arrangement, edit the `NAV_LINKS` array in `main.js` — the dropdown
   and page-highlighting are generated from that list automatically.
 - The dashed "add your next project" tiles on `research.html`, `apparel.html`,
-  `video.html`, and `audio.html` are just visual reminders — delete them
+  `video.html`, and `dj.html` are just visual reminders — delete them
   whenever you don't need the nudge anymore.
