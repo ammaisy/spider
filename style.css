@@ -264,6 +264,19 @@ section.no-border { border-top: none; }
 .spec-list h4 { margin: 0 0 6px; font-size: 1.02rem; font-family: var(--font-body); font-weight: 600; }
 .spec-list p { margin: 0; font-size: 0.94rem; }
 
+/* term-list — unnumbered subsection blocks (materials taxonomies, focus lists) */
+.term-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.term-list li { padding: 18px 0; border-bottom: 1px solid var(--line); }
+.term-list .eyebrow { display: block; margin-bottom: 6px; }
+.term-list h4 { margin: 0 0 6px; font-size: 1.02rem; font-family: var(--font-body); font-weight: 600; }
+.term-list p { margin: 0; font-size: 0.94rem; }
+
+/* solid accent callout — focus areas / pull quotes */
+.focus-callout { background: var(--accent); color: #f6f3ee; border-radius: 14px; padding: 32px; height: 100%; }
+.focus-callout .eyebrow { color: rgba(246, 243, 238, 0.75); }
+.focus-callout h3 { color: #f6f3ee; font-size: 1.3rem; margin: 8px 0 12px; }
+.focus-callout p { color: rgba(246, 243, 238, 0.85); margin: 0; font-size: 0.94rem; }
+
 /* ================= TIMELINE (education/experience) ================= */
 .timeline { border-left: 1px solid var(--line-strong); margin-left: 6px; }
 .timeline .entry { position: relative; padding: 4px 0 32px 28px; }
