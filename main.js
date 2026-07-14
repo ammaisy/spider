@@ -17,7 +17,7 @@ const NAV_LINKS = [
       { href: "research.html", label: "Research", key: "research" },
       { href: "apparel.html", label: "Apparel", key: "apparel" },
       { href: "video.html", label: "Video", key: "video" },
-      { href: "audio.html", label: "Audio / DJ", key: "audio" },
+      { href: "audio.html", label: "Audio", key: "audio" },
     ],
   },
   { href: "education.html", label: "Education", key: "education" },
