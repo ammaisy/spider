@@ -7,7 +7,7 @@
 
 // Set your real LinkedIn URL once here — it fills in the footer link
 // on every page plus the button on education.html automatically.
-const LINKEDIN_URL = "https://www.linkedin.com/in/amelia-holehouse/";
+const LINKEDIN_URL = "https://www.linkedin.com/in/your-profile-here";
 
 const NAV_LINKS = [
   { href: "index.html", label: "Home", key: "home" },
@@ -30,13 +30,9 @@ function currentKey() {
 
 function brandMark() {
   return `
-  <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <circle cx="20" cy="20" r="3.2" stroke="#d98a4e" stroke-width="1.2"/>
-    <circle cx="6" cy="8" r="2" stroke="#6fa9c9" stroke-width="1.2"/>
-    <circle cx="34" cy="8" r="2" stroke="#93a87e" stroke-width="1.2"/>
-    <circle cx="6" cy="32" r="2" stroke="#93a87e" stroke-width="1.2"/>
-    <circle cx="34" cy="32" r="2" stroke="#6fa9c9" stroke-width="1.2"/>
-    <path d="M17.5 18L8 9M22.5 18L32 9M17.5 22L8 31M22.5 22L32 31" stroke="#c4dbe0" stroke-width="1" stroke-opacity="0.6"/>
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="16" cy="16" r="14.5" stroke="#a35c3c" stroke-width="1"/>
+    <text x="16" y="20.5" text-anchor="middle" fill="#1c1a17" font-family="Fraunces, serif" font-size="13">M</text>
   </svg>`;
 }
 
