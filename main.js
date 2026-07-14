@@ -61,7 +61,7 @@ function renderHeader() {
     <nav class="nav">
       <a class="brand" href="index.html">
         ${brandMark()}
-        <span>Amelia Maisy<small>Engineer &amp; Maker</small></span>
+        <span>Amelia Maisy<small>Engineer &amp; Designer</small></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M0 1H18M0 6H18M0 11H18" stroke="currentColor" stroke-width="1.4"/></svg>
