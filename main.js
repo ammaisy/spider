@@ -2,7 +2,7 @@
 // Amelia Maisy — Portfolio
 // Shared header/footer so nav only needs editing in one place.
 // Each page sets <body data-page="home|projects|research|apparel|
-// video|audio|education|contact"> so the right nav link lights up.
+// video|dj|education|contact"> so the right nav link lights up.
 // ============================================================
 
 // Set your real LinkedIn URL once here — it fills in the footer link
@@ -17,7 +17,7 @@ const NAV_LINKS = [
       { href: "research.html", label: "Research", key: "research" },
       { href: "apparel.html", label: "Apparel", key: "apparel" },
       { href: "video.html", label: "Video", key: "video" },
-      { href: "audio.html", label: "Audio", key: "audio" },
+      { href: "dj.html", label: "DJ", key: "dj" },
     ],
   },
   { href: "education.html", label: "Education", key: "education" },
