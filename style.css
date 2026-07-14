@@ -272,9 +272,9 @@ section.no-border { border-top: none; }
 .term-list p { margin: 0; font-size: 0.94rem; }
 
 /* solid accent callout — focus areas / pull quotes */
-.focus-callout { background: var(--accent); color: #f6f3ee; border-radius: 14px; padding: 32px; height: 100%; }
+.focus-callout { background: var(--accent); color: #a35c3c; border-radius: 14px; padding: 32px; height: 100%; }
 .focus-callout .eyebrow { color: rgba(246, 243, 238, 0.75); }
-.focus-callout h3 { color: #5f6f45; font-size: 1.3rem; margin: 8px 0 12px; }
+.focus-callout h3 { color: #f6f3ee; font-size: 1.3rem; margin: 8px 0 12px; }
 .focus-callout p { color: rgba(246, 243, 238, 0.85); margin: 0; font-size: 0.94rem; }
 
 /* ================= TIMELINE (education/experience) ================= */
