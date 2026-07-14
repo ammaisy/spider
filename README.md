@@ -3,20 +3,13 @@
 Plain HTML/CSS/JS, no build tools required. Open `index.html` in a browser to
 preview locally, or push the whole folder to GitHub (see **Deploying** below).
 
-## Pending: apparel photos
+## Pending: prom dress commentary
 
-`apparel.html` currently has 4 dashed placeholder tiles waiting on real
-photos: **prom dress** (plus its commentary text), **denim top**, **navy &
-white striped shorts**, and **red top**. Once you have the files:
-
-1. Drop each image into `images/`, e.g. `images/prom-dress.jpg`.
-2. In `apparel.html`, find the matching `<div class="thumb placeholder-tile">...</div>`
-   and replace it with:
-   ```html
-   <div class="thumb"><img src="images/prom-dress.jpg" alt="Prom dress"></div>
-   ```
-3. For the prom dress, also fill in the empty `<p></p>` right below its
-   heading with the commentary text.
+All 4 apparel photos are in (`images/prom-dress.jpg`, `denim-top.jpg`,
+`striped-shorts.jpg`, `red-top.jpg`), wired into `apparel.html`. The only
+thing still missing is the **commentary text for the prom dress** — open
+`apparel.html`, find the empty `<p></p>` right under the "Prom Dress"
+heading, and fill it in.
 
 ## Files
 
