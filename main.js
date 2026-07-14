@@ -1,5 +1,5 @@
 // ============================================================
-// Maisy Holehouse — Portfolio
+// Amelia Maisy — Portfolio
 // Shared header/footer so nav only needs editing in one place.
 // Each page sets <body data-page="home|projects|research|apparel|
 // video|audio|education|contact"> so the right nav link lights up.
@@ -61,7 +61,7 @@ function renderHeader() {
     <nav class="nav">
       <a class="brand" href="index.html">
         ${brandMark()}
-        <span>Maisy Holehouse<small>Engineer &amp; Maker</small></span>
+        <span>Amelia Maisy<small>Engineer &amp; Maker</small></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M0 1H18M0 6H18M0 11H18" stroke="currentColor" stroke-width="1.4"/></svg>
@@ -80,7 +80,7 @@ function renderFooter() {
       <div class="footer-top">
         <p class="footer-tagline">Designing solutions with a chemist's rigor and a maker's instinct.</p>
         <ul class="footer-links">
-          <li><a href="mailto:hello@maisy.studio">hello@maisy.studio</a></li>
+          <li><a href="mailto:ameliamaisy19@gmail.com">email me</a></li>
           <li><a href="https://www.instagram.com/maisystravel/" target="_blank" rel="noopener">Instagram</a></li>
           <li><a href="https://on.soundcloud.com/Tl2iBa7TFvgOg7NouH" target="_blank" rel="noopener">SoundCloud</a></li>
           <li><a href="#" id="linkedinLink" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -88,7 +88,7 @@ function renderFooter() {
       </div>
       <div class="footer-bottom">
         <span>Sustainable materials · apparel · movement</span>
-        <span>&copy; 2026 Maisy Holehouse — built for material futures &amp; thoughtful product innovation.</span>
+        <span>&copy; 2026 Amelia Maisy — built for material futures &amp; thoughtful product innovation.</span>
       </div>
     </div>
   </footer>`;
