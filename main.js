@@ -113,4 +113,24 @@ document.addEventListener("DOMContentLoaded", () => {
       toggle.setAttribute("aria-expanded", String(open));
     });
   }
+
+  const revealTargets = document.querySelectorAll("main section");
+  if ("IntersectionObserver" in window && revealTargets.length) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    revealTargets.forEach((el) => {
+      el.classList.add("reveal");
+      io.observe(el);
+    });
+    // safety net — guarantee full visibility even if observation never fires
+    window.setTimeout(() => {
+      revealTargets.forEach((el) => el.classList.add("in-view"));
+    }, 2500);
+  }
 });
