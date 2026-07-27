@@ -16,8 +16,8 @@ const NAV_LINKS = [
     children: [
       { href: "research.html", label: "Research", key: "research" },
       { href: "apparel.html", label: "Apparel", key: "apparel" },
-      { href: "video.html", label: "Video", key: "video" },
       { href: "dj.html", label: "DJ", key: "dj" },
+      { href: "video.html", label: "Video", key: "video" },
     ],
   },
   { href: "education.html", label: "Education", key: "education" },
@@ -78,16 +78,19 @@ function renderFooter() {
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-top">
-        <p class="footer-tagline">Designing solutions with a chemist's rigor and a maker's instinct.</p>
+        <div class="footer-callout">
+          <p class="footer-tagline">Designing solutions with a chemist's rigor and a maker's instinct.</p>
+        </div>
         <ul class="footer-links">
           <li><a href="mailto:ameliamaisy19@gmail.com">Email Me</a></li>
           <li><a href="https://www.instagram.com/maisystravel/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://on.soundcloud.com/Tl2iBa7TFvgOg7NouH" target="_blank" rel="noopener">SoundCloud</a></li>
           <li><a href="#" id="linkedinLink" target="_blank" rel="noopener">LinkedIn</a></li>
         </ul>
       </div>
-      <div class="footer-bottom">
-        <span>Sustainable materials · apparel · movement</span>
+    </div>
+    <div class="footer-bottom-rule">
+      <div class="wrap footer-bottom">
+        <span>sustainable materials, apparel, movement</span>
         <span>&copy; 2026 Amelia Maisy — built for material futures &amp; thoughtful product innovation.</span>
       </div>
     </div>

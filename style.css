@@ -74,11 +74,12 @@ h2 { font-size: clamp(1.5rem, 2.8vw, 2rem); }
 h3 { font-size: 1.3rem; }
 
 p { color: var(--ink-dim); margin: 0 0 1em; }
-p.lede { color: var(--ink); font-size: 1.14rem; max-width: 60ch; }
+p.lede { color: var(--ink); font-size: 1.14rem; }
 
 .tick { color: var(--ink-faint); font-family: var(--font-body); font-size: 13px; }
 
 /* ================= HEADER / NAV ================= */
+#site-header { display: contents; }
 header.site-header {
   position: sticky; top: 0; z-index: 50;
   background: rgba(246, 243, 238, 0.92);
@@ -346,14 +347,27 @@ section.no-border { border-top: none; }
 .mail-cta:hover { color: var(--accent-2); }
 
 /* ================= FOOTER ================= */
-footer.site-footer { border-top: 1px solid var(--line); padding: 48px 0 32px; margin-top: 40px; }
-.footer-top { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
+footer.site-footer { border-top: 1px solid var(--line); padding: 48px 0 0; margin-top: 40px; }
+.footer-top { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; padding-bottom: 32px; }
 .footer-tagline { font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); max-width: 25ch; }
 .footer-links { display: flex; gap: 20px; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; }
 .footer-links a { text-decoration: none; color: var(--ink-dim); font-size: 0.9rem; }
 .footer-links a:hover { color: var(--accent-2); }
+
+/* warm callout treatment for the footer tagline, matching .focus-callout elsewhere on the site */
+.footer-callout {
+  background: var(--accent-2);
+  border-radius: 14px;
+  padding: 22px 28px;
+  max-width: 380px;
+}
+.footer-callout .footer-tagline { color: #f6f3ee; margin: 0; max-width: none; }
+
+/* the rule above the copyright line runs edge-to-edge like every other section divider on the site,
+   rather than being boxed in by .wrap the way it was before */
+.footer-bottom-rule { border-top: 1px solid var(--line); }
 .footer-bottom {
-  margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line);
+  padding-top: 20px; padding-bottom: 32px;
   display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
   font-family: var(--font-body); font-size: 11px; color: var(--ink-faint);
 }
