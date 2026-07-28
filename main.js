@@ -78,9 +78,7 @@ function renderFooter() {
   <footer class="site-footer">
     <div class="wrap">
       <div class="footer-top">
-        <div class="footer-callout">
-          <p class="footer-tagline">Designing solutions with a chemist's rigor and a maker's instinct.</p>
-        </div>
+        <p class="footer-tagline">Designing solutions with a chemist's rigor and a maker's instinct.</p>
         <ul class="footer-links">
           <li><a href="mailto:ameliamaisy19@gmail.com">Email Me</a></li>
           <li><a href="https://www.instagram.com/maisystravel/" target="_blank" rel="noopener">Instagram</a></li>
