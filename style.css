@@ -349,19 +349,11 @@ section.no-border { border-top: none; }
 /* ================= FOOTER ================= */
 footer.site-footer { border-top: 1px solid var(--line); padding: 48px 0 0; margin-top: 40px; }
 .footer-top { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; padding-bottom: 32px; }
-.footer-tagline { font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); max-width: 25ch; }
+.footer-tagline { font-family: var(--font-display); font-size: 1.1rem; color: var(--ink); white-space: nowrap; }
 .footer-links { display: flex; gap: 20px; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; }
 .footer-links a { text-decoration: none; color: var(--ink-dim); font-size: 0.9rem; }
 .footer-links a:hover { color: var(--accent-2); }
-
-/* warm callout treatment for the footer tagline, matching .focus-callout elsewhere on the site */
-.footer-callout {
-  background: var(--accent-2);
-  border-radius: 14px;
-  padding: 22px 28px;
-  max-width: 380px;
-}
-.footer-callout .footer-tagline { color: #f6f3ee; margin: 0; max-width: none; }
+@media (max-width: 500px) { .footer-tagline { white-space: normal; } }
 
 /* the rule above the copyright line runs edge-to-edge like every other section divider on the site,
    rather than being boxed in by .wrap the way it was before */
